@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS project_db;
+USE project_db;
+
+CREATE TABLE IF NOT EXISTS items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    image_url VARCHAR(500),
+    rating FLOAT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
